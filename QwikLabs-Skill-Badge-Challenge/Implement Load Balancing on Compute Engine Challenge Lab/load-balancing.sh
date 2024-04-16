@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export REGION="${ZONE%-*}"
 
 gcloud compute networks create nucleus-vpc --subnet-mode=auto
