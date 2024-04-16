@@ -9,9 +9,7 @@ gcloud compute instances create $INSTANCE_NAME \
           --zone $ZONE  \
           --machine-type e2-micro  \
           --image-family debian-10  \
-          --image-project debian-cloud 
-
- 
+          --image-project debian-cloud  
   
 cat << EOF > startup.sh
 #! /bin/bash
