@@ -9,7 +9,7 @@ You are expected to have the skills and knowledge for these tasks, so don't expe
 '''
 
 ### Your Challenge
-```bash
+
 You have been asked to deploy, configure, and test a new Kubernetes Engine cluster that will be used for application development and pipeline testing by the Orca development team.
 
 As per the organization's security standards you must ensure that the new Kubernetes Engine cluster is built according to the organization's most recent security standards and thereby must comply with the following:
@@ -41,7 +41,7 @@ All new cloud objects and services that you create should include the "orca-" pr
 Your final task is to validate that the cluster is working correctly by deploying a simple application to the cluster to test that management access to the cluster using the kubectl tool is working from the orca-jumphost compute instance.
 
 For all tasks in this lab, use the Region region and the Zone zone.
-```
+
 
 ## Solution Implementation
 
