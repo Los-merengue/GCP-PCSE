@@ -2,11 +2,10 @@
 
 ### Challenge Scenario
 
-'''bash
 You have started a new role as a junior member of the security team for the Orca team in Jooli Inc. Your team is responsible for ensuring the security of the Cloud infrastructure and services that the company's applications depend on.
 
 You are expected to have the skills and knowledge for these tasks, so don't expect step-by-step guides to be provided.
-'''
+
 
 ### Your Challenge
 
