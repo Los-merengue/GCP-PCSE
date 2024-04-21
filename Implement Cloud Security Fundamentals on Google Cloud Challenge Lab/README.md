@@ -1,4 +1,4 @@
-## ***```Implement Load Balancing on Compute Engine: Challenge Lab```***
+## ***```Implement Cloud Security Fundamentals on Google Cloud: Challenge Lab```***
 
 ### Export all the values carefully
 
