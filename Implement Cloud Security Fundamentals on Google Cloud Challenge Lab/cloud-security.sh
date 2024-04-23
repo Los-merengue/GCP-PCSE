@@ -8,7 +8,7 @@ cat > define-role.yaml <<EOF_END
 title: "$CUSTOM_SECURITY_ROLE"
 description: "This role script is used to give the permissions"
 stage: "ALPHA"
-includePermissions:
+includedPermissions:
 - storage.buckets.get
 - storage.objects.get
 - storage.objects.list
@@ -16,3 +16,5 @@ includePermissions:
 - storage.objects.create
 EOF_END
 
+gcloud iam service-accounts create orca-private-cluster-sa --display-name "Service Account of Orca Private Cluster"
+gcloud iam roles create $CUSTOM_SECURITY_ROLE --project $DEVSHELL_PROJECT_ID --file define-role.yaml
