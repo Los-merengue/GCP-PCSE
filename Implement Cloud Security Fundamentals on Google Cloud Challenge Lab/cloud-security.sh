@@ -2,6 +2,24 @@
 
 ## Task 1
 
+echo "Welcome to this Lab of Implementing Security Fundamentals in GCP, I am an automation script"
+
+echo "===========================WELCOME================================"
+
+echo "Now that you are here, I will need to ask you for some values to input to enable me proceed"
+
+echo "What is the Zone you want to Deploy this Infrastructure"
+read ZONE
+
+echo "What is the name of the custom role you want to deploy"
+read CUSTOM_SECURITY_ROLE
+
+echo "What is the name of the Service Account"
+read SERVICE_ACCOUNT
+
+echo "What is the name of the Cluster Name"
+read CLUSTER_NAME
+
 gcloud config set compute/zone $ZONE
 
 cat > define-role.yaml <<EOF_END
