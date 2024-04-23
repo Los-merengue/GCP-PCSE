@@ -63,9 +63,9 @@ export FIREWALL_NAME=
 ###
 
 ```bash 
-curl -LO https://raw.githubusercontent.com/Los-merengue/GCP-PCSE/main/Implement%20Cloud%20Security%20Fundamentals%20on%20Google%20Cloud%EF%80%BA%20Challenge%20Lab/cloud-security.sh
-sudo chmod +x cloud-security.sh
-./cloud-security.sh
+- curl -LO https://raw.githubusercontent.com/Los-merengue/GCP-PCSE/main/Implement%20Cloud%20Security%20Fundamentals%20on%20Google%20Cloud%EF%80%BA%20Challenge%20Lab/cloud-security.sh
+- sudo chmod +x cloud-security.sh
+- ./cloud-security.sh
 
 ```
 
