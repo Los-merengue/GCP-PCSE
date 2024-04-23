@@ -48,28 +48,28 @@ gcloud iam service-accounts create $SERVICE_ACCOUNT --display-name "Service Acco
 
 ## Task 3 
 gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member serviceAccount:$SERVICE_ACCOUNT@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com \
---role roles/monitoring.metricWriter
+ --role roles/monitoring.metricWriter
 
 gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member serviceAccount:$SERVICE_ACCOUNT@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com \
---role roles/monitoring.viewer
+ --role roles/monitoring.viewer
 
 gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member serviceAccount:$SERVICE_ACCOUNT@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com \
---role roles/logging.logWriter
+ --role roles/logging.logWriter
 
 gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member serviceAccount:$SERVICE_ACCOUNT@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com \
---role projects/$DEVSHELL_PROJECT_ID/roles/$CUSTOM_SECURITY_ROLE
+ --role projects/$DEVSHELL_PROJECT_ID/roles/$CUSTOM_SECURITY_ROLE
 
 ## Task 4
 
 gcloud container clusters create $CLUSTER_NAME --num-nodes 1 --master-ipv4-cidr=172.16.0.64/28 --network orca-build-vpc --subnetwork orca-build-subnet \
---enable-master-authorized-networks --master-authorized-networks 192.168.10.2/32 --enable-ip-alias --enable-private-nodes --enable-private-endpoint \ 
---service-account $SERVICE_ACCOUNT@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com --zone $ZONE
+ --enable-master-authorized-networks --master-authorized-networks 192.168.10.2/32 --enable-ip-alias --enable-private-nodes \
+ --enable-private-endpoint --service-accounts $SERVICE_ACCOUNT@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com --zone $ZONE
 
 ## Task 5:
 
 gcloud compute ssh --zone "$ZONE" "orca-jumphost" --project "$DEVSHELL_PROJECT_ID" --quiet --command "gcloud config set compute/zone $ZONE && \ 
-gcloud container clusters get-credentials $CLUSTER_NAME --internal-ip && sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin \
-&& kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0 && kubectl expose deployment hello-server \
---name orca-hello-service --type LoadBalancer --port 80 --target-port 8080"
+ gcloud container clusters get-credentials $CLUSTER_NAME --internal-ip && sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin \
+ && kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0 && kubectl expose deployment hello-server \
+ --name orca-hello-service --type LoadBalancer --port 80 --target-port 8080"
 
 echo "===================================END==========================================="
