@@ -66,3 +66,5 @@ gcloud compute ssh --zone "$ZONE" "orca-jumphost" --project "$DEVSHELL_PROJECT_I
 gcloud container clusters get-credentials $CLUSTER_NAME --internal-ip && sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin \
 && kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0 && kubectl expose deployment hello-server \
 --name orca-hello-service --type LoadBalancer --port 80 --target-port 8080"
+
+echo "===================================END==========================================="
