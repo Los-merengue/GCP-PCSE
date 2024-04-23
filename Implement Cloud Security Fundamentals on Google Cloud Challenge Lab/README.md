@@ -46,15 +46,10 @@ For all tasks in this lab, use the Region region and the Zone zone.
 
 ### Export all the values carefully
 
-```bash
-export INSTANCE_NAME=
+The solution to this problem I have been able to automate the process in the [script](./cloud-security.sh) and all that has to 
+done is just to run the script in the cloud shell environment. When you begin running the script, you may be asked about 
+the parameters that will be issued to you by Google, fill it and run your script.
 
-export ZONE=
-
-export PORT=
-
-export FIREWALL_NAME=
-```
 ###
 ###
 
