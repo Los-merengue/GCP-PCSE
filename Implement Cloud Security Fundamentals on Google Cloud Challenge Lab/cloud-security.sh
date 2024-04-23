@@ -22,3 +22,16 @@ gcloud iam roles create $CUSTOM_SECURITY_ROLE --project $DEVSHELL_PROJECT_ID --f
 ## Task 2
 
 gcloud iam service-accounts create $SERVICE_ACCOUNT --display-name "Service Account of Orca Private Cluster"
+
+## Task 3 
+gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member serviceAccount:$SERVICE_ACCOUNT@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com \
+--role roles/monitoring.metricWriter
+
+gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member serviceAccount:$SERVICE_ACCOUNT@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com \
+--role roles/monitoring.viewer
+
+gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member serviceAccount:$SERVICE_ACCOUNT@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com \
+--role roles/logging.logWriter
+
+gcloud projects add-iam-policy-binding $DEVSHELL_PROJECT_ID --member serviceAccount:$SERVICE_ACCOUNT@$DEVSHELL_PROJECT_ID.iam.gserviceaccount.com \
+--role projects/$DEVSHELL_PROJECT_ID/roles/$CUSTOM_SECURITY_ROLE
