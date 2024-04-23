@@ -20,6 +20,11 @@ read SERVICE_ACCOUNT
 echo "What is the name of the Cluster Name"
 read CLUSTER_NAME
 
+export ZONE=$ZONE
+export CUSTOM_SECURITY_ROLE=$CUSTOM_SECURITY_ROLE
+export SERVICE_ACCOUNT=$SERVICE_ACCOUNT
+export CLUSTER_NAME=$CLUSTER_NAME
+
 gcloud config set compute/zone $ZONE
 
 cat > define-role.yaml <<EOF_END
