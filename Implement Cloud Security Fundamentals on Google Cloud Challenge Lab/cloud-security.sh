@@ -18,3 +18,7 @@ EOF_END
 
 gcloud iam service-accounts create orca-private-cluster-sa --display-name "Service Account of Orca Private Cluster"
 gcloud iam roles create $CUSTOM_SECURITY_ROLE --project $DEVSHELL_PROJECT_ID --file define-role.yaml
+
+## Task 2
+
+gcloud iam service-accounts create $SERVICE_ACCOUNT --display-name "Service Account of Orca Private Cluster"
