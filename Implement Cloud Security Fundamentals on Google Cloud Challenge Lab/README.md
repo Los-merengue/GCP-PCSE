@@ -63,8 +63,10 @@ export FIREWALL_NAME=
 ###
 
 ```bash 
-curl -LO https://raw.githubusercontent.com/Los-merengue/GCP-PCSE/main/QwikLabs-Skill-Badge-Challenge/Implement%20Load%20Balancing%20on%20Compute%20Engine%EF%80%BA%20Challenge%20Lab/load-balancing.sh
-sudo chmod +x load-balancing.sh
-./load-balancing.sh
+curl -LO https://raw.githubusercontent.com/Los-merengue/GCP-PCSE/main/Implement%20Cloud%20Security%20Fundamentals%20on%20Google%20Cloud%EF%80%BA%20Challenge%20Lab/cloud-security.sh
+sudo chmod +x cloud-security.sh
+./cloud-security.sh
+
+```
 
 ### Congratulations !!!
