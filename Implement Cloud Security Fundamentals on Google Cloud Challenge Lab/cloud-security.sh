@@ -73,8 +73,8 @@ gcloud compute ssh --zone "$ZONE" "orca-jumphost" --project "$DEVSHELL_PROJECT_I
  --name orca-hello-service --type LoadBalancer --port 80 --target-port 8080"
 
 
-echo -e "You may need to wait for some minutes \n Before you can click on Completed the Lab"
+echo -e "\n\nYou may need to wait for some minutes \n Before you can click on Completed the Lab"
 
-echo -e "\n\n"
+echo -e "\n"
 
 echo "===================================END==========================================="
