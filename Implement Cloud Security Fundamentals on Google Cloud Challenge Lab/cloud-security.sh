@@ -2,22 +2,22 @@
 
 ## Task 1
 
-echo "Welcome to this Lab of Implementing Security Fundamentals in GCP, I am an automation script"
+echo -e "Welcome to this Lab of Implementing Security Fundamentals in GCP, I am an automation script\n"
 
 echo "===========================WELCOME================================"
 
-echo "Now that you are here, I will need to ask you for some values to input to enable me proceed"
+echo -e "\n\n Now that you are here, I will need to ask you for some values to input to enable me proceed \n"
 
-echo "What is the Zone you want to Deploy this Infrastructure"
+echo -e "\n\nWhat is the Zone you want to Deploy this Infrastructure"
 read ZONE
 
-echo "What is the name of the custom role you want to deploy"
+echo -e "\n\nWhat is the name of the custom role you want to deploy"
 read CUSTOM_SECURITY_ROLE
 
-echo "What is the name of the Service Account"
+echo -e "\n\nWhat is the name of the Service Account"
 read SERVICE_ACCOUNT
 
-echo "What is the name of the Cluster Name"
+echo -e "\n\nWhat is the name of the Cluster Name"
 read CLUSTER_NAME
 
 export ZONE=$ZONE
@@ -71,5 +71,10 @@ gcloud compute ssh --zone "$ZONE" "orca-jumphost" --project "$DEVSHELL_PROJECT_I
  gcloud container clusters get-credentials $CLUSTER_NAME --internal-ip && sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin \
  && kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0 && kubectl expose deployment hello-server \
  --name orca-hello-service --type LoadBalancer --port 80 --target-port 8080"
+
+
+echo -e "You may need to wait for some minutes \n Before you can click on Completed the Lab"
+
+echo -e "\n\n"
 
 echo "===================================END==========================================="
