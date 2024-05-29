@@ -26,7 +26,7 @@ Tips and tricks:
 
 ### Export all the values carefully
 
-The solution to this problem I have been able to automate the process in the [script](./cloud-security.sh) and all that has to 
+The solution to this problem I have been able to automate the process in the [script](./secureGCP.sh) and all that has to 
 done is just to run the script in the cloud shell environment. When you begin running the script, you may be asked about 
 the parameters that will be issued to you by Google, fill it and run your script.
 
