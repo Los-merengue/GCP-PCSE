@@ -1,15 +1,15 @@
 #!/bin/bash
 
-echo -e "Welcome to this Lab of Build and Secure Networks in Google Cloud Challenge Lab\n"
+echo -e "Welcome to this Build and Secure Networks in Google Cloud Challenge Lab\n"
 
 echo "===========================WELCOME================================"
 
 echo -e "\n\n Now that you are here, I will need to ask you for some values to input to enable me proceed \n"
 
-echo -e "\n\nWhat is the Zone you want to Deploy this Infrastructure"
+echo -e "\n\nWhat is the Zone you plan to work on"
 read ZONE
 
-echo -e "\n\nWhat is the IAP_NETWORK_TAG name of the custom role you want to deploy"
+echo -e "\n\nWhat is the IAP_NETWORK_TAG"
 read IAP_NETWORK_TAG
 
 echo -e "\n\nWhat is the INTERNAL NETWORK TAG"
