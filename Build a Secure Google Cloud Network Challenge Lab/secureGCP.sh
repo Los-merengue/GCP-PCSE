@@ -1,12 +1,31 @@
+#!/bin/bash
+
+echo -e "Welcome to this Lab of Build and Secure Networks in Google Cloud Challenge Lab\n"
+
+echo "===========================WELCOME================================"
+
+echo -e "\n\n Now that you are here, I will need to ask you for some values to input to enable me proceed \n"
+
+echo -e "\n\nWhat is the Zone you want to Deploy this Infrastructure"
+read ZONE
+
+echo -e "\n\nWhat is the IAP_NETWORK_TAG name of the custom role you want to deploy"
+read IAP_NETWORK_TAG
+
+echo -e "\n\nWhat is the INTERNAL NETWORK TAG"
+read INTERNAL NETWORK TAG
+
+echo -e "\n\nWhat is the name of the HTTP_NETWORK TAG"
+read HTTP_NETWORK TAG
 
 
-export IAP_NETWORK_TAG=
+export IAP_NETWORK_TAG=$IAP_NETWORK_TAG
 
-export INTERNAL_NETWORK_TAG=
+export INTERNAL_NETWORK_TAG=$INTERNAL NETWORK TAG
 
-export HTTP_NETWORK_TAG=
+export HTTP_NETWORK_TAG=$HTTP_NETWORK TAG
 
-export ZONE=
+export ZONE=$ZONE
 
 
 gcloud compute firewall-rules delete open-access
@@ -28,7 +47,7 @@ gcloud compute instances add-tags juice-shop --tags=$INTERNAL_NETWORK_TAG --zone
  
 
 
-Task 6 : SSH to bastion host via IAP and juice-shop via bastion
-In Compute Engine -> VM Instances page, click the SSH button for the bastion host. Then SSH to juice-shop by
+#Task 6 : SSH to bastion host via IAP and juice-shop via bastion
+#In Compute Engine -> VM Instances page, click the SSH button for the bastion host. Then SSH to juice-shop by
  
 gcloud compute ssh juice-shop --internal-ip
