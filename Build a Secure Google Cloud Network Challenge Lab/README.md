@@ -38,9 +38,9 @@ the parameters that will be issued to you by Google, fill it and run your script
 ###
 
 ```bash 
-- curl -LO https://raw.githubusercontent.com/Los-merengue/GCP-PCSE/main/Implement%20Cloud%20Security%20Fundamentals%20on%20Google%20Cloud%EF%80%BA%20Challenge%20Lab/cloud-security.sh
-- sudo chmod +x cloud-security.sh
-- ./cloud-security.sh
+- curl -LO https://raw.githubusercontent.com/Los-merengue/GCP-PCSE/main/Build%20a%20Secure%20Google%20Cloud%20Network%EF%80%BA%20Challenge%20Lab/secureGCP.sh
+- sudo chmod +x secureGCP.sh
+- ./secureGCP.sh
 
 ```
 

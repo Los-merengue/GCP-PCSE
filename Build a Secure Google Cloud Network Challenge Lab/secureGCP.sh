@@ -31,6 +31,31 @@ export ZONE=$ZONE
 
 gcloud compute firewall-rules delete open-access
  
+ Task 2
+
+echo "Please perform the following manual task:"
+
+# Add the description of the manual task here
+echo "1. Open the terminal."
+echo "2. Navigate to the desired directory."
+echo "3. Run the necessary commands."
+
+# Verify task completion
+while true; do
+    read -p "Have you completed the task? (yes/no): " choice
+    case $choice in
+        yes|Yes|YES)
+            echo "Thank you for completing the task."
+            break
+            ;;
+        no|No|NO)
+            echo "Please complete the task and then confirm."
+            ;;
+        *)
+            echo "Invalid input. Please enter 'yes' or 'no'."
+            ;;
+    esac
+done
 
 # Task 3
 
@@ -53,6 +78,31 @@ gcloud compute instances add-tags juice-shop --tags=$INTERNAL_NETWORK_TAG --zone
 
 
 #Task 6 : SSH to bastion host via IAP and juice-shop via bastion
+
+echo "Please perform the following manual task:"
+
+# Add the description of the manual task here
+echo "1. Goto Compute Engine Instance"
+echo "2. VM instances Page"
+echo "3. Click the SSH button"
+
+# Verify task completion
+while true; do
+    read -p "Have you completed the task? (yes/no): " choice
+    case $choice in
+        yes|Yes|YES)
+            echo "Thank you for completing the task."
+            break
+            ;;
+        no|No|NO)
+            echo "Please complete the task and then confirm."
+            ;;
+        *)
+            echo "Invalid input. Please enter 'yes' or 'no'."
+            ;;
+    esac
+done
+
 #In Compute Engine -> VM Instances page, click the SSH button for the bastion host. Then SSH to juice-shop by
  
 gcloud compute ssh juice-shop --internal-ip
