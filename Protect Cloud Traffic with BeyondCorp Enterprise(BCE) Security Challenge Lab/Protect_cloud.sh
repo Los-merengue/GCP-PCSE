@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #TASK 1:-
 
 git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
