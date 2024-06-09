@@ -1,5 +1,5 @@
 
-## ***```Implement Load Balancing on Compute Engine: Challenge Lab```***
+## ***```Protect Sensitive Data with Data Loss Prevention_Challenge Lab```***
 
 ### Export all the values carefully
 
