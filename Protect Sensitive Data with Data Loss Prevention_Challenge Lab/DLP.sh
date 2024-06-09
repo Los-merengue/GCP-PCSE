@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 
 export BUCKET_NAME=
