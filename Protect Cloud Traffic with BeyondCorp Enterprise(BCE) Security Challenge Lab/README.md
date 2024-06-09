@@ -1,5 +1,5 @@
 
-## ***```Implement Load Balancing on Compute Engine: Challenge Lab```***
+## ***```Protect Cloud Traffic with BeyondCorp Enterprise(BCE) Security Challenge Lab```***
 
 ### Export all the values carefully
 
