@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-export BUCKET_NAME=
+export BUCKET_NAME=qwiklabs-gcp-04-e4861becd049-redact
 
 cat > redact-request.json <<EOF
 {
