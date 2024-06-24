@@ -1,4 +1,4 @@
-## ***```Protect Sensitive Data with Data Loss Prevention_Challenge Lab```***
+## ***```Monitor and Log with Google Cloud Observability_Challenge Lab```***
 
 ### Export all the values carefully
 
@@ -19,9 +19,9 @@ export FIREWALL_NAME=
 ###
 
 ```bash 
-curl -LO https://raw.githubusercontent.com/Los-merengue/GCP-PCSE/main/QwikLabs-Skill-Badge-Challenge/Implement%20Load%20Balancing%20on%20Compute%20Engine%EF%80%BA%20Challenge%20Lab/load-balancing.sh
-sudo chmod +x load-balancing.sh
-./load-balancing.sh
+curl -LO https://raw.githubusercontent.com/Los-merengue/GCP-PCSE/main/Monitor%20and%20Log%20with%20Google%20Cloud%20Observability_Challenge%20Lab/Monitor.sh
+sudo chmod +x Monitor.sh
+./Monitor.sh
 ```
 
 ### Lab might task 10 - 15 mintues to updated the score so don't worry!
