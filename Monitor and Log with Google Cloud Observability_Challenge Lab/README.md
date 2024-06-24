@@ -3,13 +3,9 @@
 ### Export all the values carefully
 
 ```bash
-export INSTANCE_NAME=
+export METRICS_NAME=
 
-export ZONE=
-
-export PORT=
-
-export FIREWALL_NAME=
+export ALERT=
 ```
 ###
 ###
@@ -22,6 +18,10 @@ export FIREWALL_NAME=
 curl -LO https://raw.githubusercontent.com/Los-merengue/GCP-PCSE/main/Monitor%20and%20Log%20with%20Google%20Cloud%20Observability_Challenge%20Lab/Monitor.sh
 sudo chmod +x Monitor.sh
 ./Monitor.sh
+```
+
+```bash
+gcloud alpha monitoring policies create --policy-from-file="app-engine-error-percent-policy.json"
 ```
 
 ### Lab might task 10 - 15 mintues to updated the score so don't worry!
