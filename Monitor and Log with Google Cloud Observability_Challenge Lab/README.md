@@ -1,31 +1,32 @@
-================================================================================================================================================
+## ***```Protect Sensitive Data with Data Loss Prevention_Challenge Lab```***
+
+### Export all the values carefully
+
+```bash
+export INSTANCE_NAME=
+
+export ZONE=
+
+export PORT=
+
+export FIREWALL_NAME=
+```
+###
+###
+
+### ***NOW JUST COPY THE CODE AND PASTE ON YOUR CLOUD SHELL***
+###
+###
+
+```bash 
+curl -LO https://raw.githubusercontent.com/Los-merengue/GCP-PCSE/main/QwikLabs-Skill-Badge-Challenge/Implement%20Load%20Balancing%20on%20Compute%20Engine%EF%80%BA%20Challenge%20Lab/load-balancing.sh
+sudo chmod +x load-balancing.sh
+./load-balancing.sh
+```
+
+### Lab might task 10 - 15 mintues to updated the score so don't worry!
+
+[![Screenshot-2024-03-25-at-7-47-33-PM.png](https://i.postimg.cc/Vk2hdZfK/Screenshot-2024-03-25-at-7-47-33-PM.png)](https://postimg.cc/zyS7QjRh)
 
 
-TASK 1:- 
-
-curl -sSO https://dl.google.com/cloudagents/add-logging-agent-repo.sh
-sudo bash add-logging-agent-repo.sh --also-install
-
-curl -sSO https://dl.google.com/cloudagents/add-monitoring-agent-repo.sh
-sudo bash add-monitoring-agent-repo.sh --also-install
-
-(cd /etc/stackdriver/collectd.d/ && sudo curl -O https://raw.githubusercontent.com/Stackdriver/stackdriver-agent-service-configs/master/etc/collectd.d/apache.conf)
-
-sudo service stackdriver-agent restart
-
-
-
-TASK 5 :-  
-
-resource.type="gce_instance"
-logName="projects/YOUR_PROJECT_ID/logs/apache-access"
-textPayload:"200"
-
-
-Enter the following in the Regular Expression field:
-
-execution took (\d+)
-
-
-
-================================================================================================================================================
+### Congratulations !!!
